@@ -39,8 +39,8 @@ Esta é uma API para gerenciar pedidos, com suporte a **autenticação via JWT (
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-projeto.git
-cd seu-projeto
+git clone https://github.com/seu-usuario/desafio-jitter.git
+cd desafio-jitter
 ```
 
 2. Instale as dependências:
@@ -54,8 +54,13 @@ npm install
 4. Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
 
 ```
+DB_USER=teste
+DB_HOST=localhost
+DB_DATABASE=ordersdb
+DB_PASSWORD=1234
+DB_PORT=5432
 PORT=3000
-JWT_SECRET=jwt123
+JWT_SECRET=1234
 ```
 
 5. Inicie a API:
@@ -65,6 +70,8 @@ node app.js
 ```
 
 A API estará rodando em: `http://localhost:3000`
+
+A documentação pode ser acessada em `http://localhost:3000/api-docs/`
 
 ---
 
@@ -152,7 +159,6 @@ Bearer SEU_TOKEN_AQUI
 ## Observações
 
 - O projeto utiliza **JWT com validade de 1 hora**.
-- O `idItem` pode ser alfanumérico (`VARCHAR`) para permitir códigos como `ITEM001`.
 - As rotas estão preparadas para serem facilmente integradas com front-end ou testes via Postman/Swagger.
 
 ---
