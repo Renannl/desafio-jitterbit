@@ -49,13 +49,13 @@ cd desafio-jitter
 npm install
 ```
 
-3. Configure o banco de dados PostgreSQL:
-Crie um usuário no banco de dados e dê as permissões necessárias (Pode logar, Superuser, Criar databases,etc)
+3. Configure o banco de dados PostgreSQL:  
+Crie um usuário no banco de dados e dê as permissões necessárias (Pode logar, Superuser, Criar databases, etc)
 ```
 Nome: teste
 Senha: 1234
 ```
-Após isso crie um banco:
+Depois de criar o usuário, crie o banco que será usado pela aplicação:
 ```
 Nome do banco: ordersdb
 Proprietário: teste
