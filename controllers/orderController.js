@@ -125,7 +125,7 @@ async function listarPedidos(req, res) {
     for (const order of ordersResult.rows) {
       const itemsResult = await pool.query(
         `SELECT productId, quantity, price FROM "Items" WHERE orderId = $1`,
-        [order.orderid] // note: use o mesmo case que o DB retorna
+        [order.orderid]
       );
 
       pedidos.push({
