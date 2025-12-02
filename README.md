@@ -51,7 +51,7 @@ npm install
 
 3. Configure o banco de dados PostgreSQL e crie as tabelas necessárias (`Order` e `Items`).
 
-4. Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
+4. Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis caso não haja:
 
 ```
 DB_USER=teste
