@@ -49,7 +49,17 @@ cd desafio-jitter
 npm install
 ```
 
-3. Configure o banco de dados PostgreSQL e crie as tabelas necessárias (`Order` e `Items`).
+3. Configure o banco de dados PostgreSQL:
+Crie um usuário no banco de dados e dê as permissões necessárias (Pode logar, Superuser, Criar databases,etc)
+```
+Nome: teste
+Senha: 1234
+```
+Após isso crie um banco:
+```
+Nome do banco: ordersdb
+Proprietário: teste
+```
 
 4. Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis caso não haja:
 
